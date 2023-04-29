@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Diabetes Detection</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/iconmoon.css" rel="stylesheet" type="text/css">
+		<link rel = "icon" href = "https://i.postimg.cc/wxfykpRf/lelalogo.png" type = "image/x-icon">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="../static/style.css">
+		
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+.containerMyDiet {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+}
+
+#contact input[type="text"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #e31096;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #ffc0f8;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+		</style>
+	</head>
+
+
+	<body>
+		
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a id="branding" class="pull-left" href="/">
+						<img src="https://i.postimg.cc/wxfykpRf/lelalogo.png" height="80px" width= "62px">
+						
+						<h1 class="site-title">DIABETES DETECTION</h1>
+					</a>
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation pull-right">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							
+			
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				
+				<div class="content">
+					<div class="container">
+						
+						<h2 class="entry-title">ENTER THE VARIABLES TO PREDICT THE OUTPUT</h2>
+
+						<hr>
+						<div class="containerMyDiet">  
+							<form id="contact" action="" method="post">
+							  <h4>Enter the following details</h4>
+							  <fieldset>
+								<label>High BP</label>
+								<input placeholder="Enter" type="text" name="1" tabindex="1" required autofocus>
+							  </fieldset>
+							  <fieldset>
+								<label>High Cholesterol</label>
+								<input placeholder="Enter" type="text" tabindex="2" name="2"required>
+							  </fieldset>
+							  <label>Cholesterol Check</label>
+								<input placeholder="Enter" type="text" tabindex="3" name="3"required>
+							  </fieldset>
+							  <label>BMI</label>
+								<input placeholder="Enter" type="text" tabindex="4" name="4"required>
+							  </fieldset>
+							  <label>Smoker</label>
+								<input placeholder="Enter" type="text" tabindex="5" name="5"required>
+							  </fieldset>
+							  <label>Stroke</label>
+								<input placeholder="Enter" type="text" tabindex="6" name="6"required>
+							  </fieldset>
+							  <label>Heart Diseasor Attack</label>
+								<input placeholder="Enter" type="text" tabindex="7" name="7"required>
+							  </fieldset>
+							  <label>Physical Activity</label>
+								<input placeholder="Enter" type="text" tabindex="8" name="8"required>
+							  </fieldset>
+							  <label>Fruits</label>
+								<input placeholder="Enter" type="text" tabindex="9" name="9"required>
+							  </fieldset>
+							  <label>Veggies</label>
+								<input placeholder="Enter" type="text" tabindex="10" name="10"required>
+							  </fieldset>
+							  <label>Heavy Alchohol Consumption</label>
+								<input placeholder="Enter" type="text" tabindex="11" name="11"required>
+							  </fieldset>
+							  <label>Any Health Care</label>
+								<input placeholder="Enter" type="text" tabindex="12" name="12"required>
+							  </fieldset>
+							  <label>No Doctor BC Cost</label>
+								<input placeholder="Enter" type="text" tabindex="13" name="13"required>
+							  </fieldset>
+							  <label>General Health</label>
+								<input placeholder="Enter" type="text" tabindex="14" name="14"required>
+							  </fieldset>
+							  <label>Mental Health</label>
+								<input placeholder="Enter" type="text" tabindex="15" name="15"required>
+							  </fieldset>
+							  <label>Physical Health</label>
+								<input placeholder="Enter" type="text" tabindex="16" name="16"required>
+							  </fieldset>
+							  <label>Daily Walk</label>
+								<input placeholder="Enter" type="text" tabindex="17" name="17"required>
+							  </fieldset>
+							  <label>Sex</label>
+								<input placeholder="Enter" type="text" tabindex="18" name="18"required>
+							  </fieldset>
+							  <label>Age</label>
+								<input placeholder="Enter" type="text" tabindex="19" name="19"required>
+							  </fieldset>
+							  <label>Education</label>
+								<input placeholder="Enter" type="text" tabindex="20" name="20"required>
+							  </fieldset>
+							  <label>Income</label>
+								<input placeholder="Enter" type="text" tabindex="21" name="21"required>
+							  </fieldset>
+						
+					
+								<!-- <a href="./report.html" id="contact-submit" data-submit="...Sending" style="font-size:22px">Submit</a> -->
+								<input type="submit"></input>
+							  </fieldset>
+							</form>
+							<!-- <button name="submit" type="submit" >Submit</button> -->
+						  </div>
+
+
+			</main> <!-- .main-content -->
+			
+			<footer class="site-footer">
+				<div class="container" href="/">
+					<img src="https://i.postimg.cc/wxfykpRf/lelalogo.png" height="80px" width= "62px">
+					<nav class="footer-navigation">
+					</nav>
+					 
+					<div class="colophon">
+						 <p>Copyright 2023. Designed by Rohan Dange. All right reserved.</p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
