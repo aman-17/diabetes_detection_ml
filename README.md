@@ -1,11 +1,56 @@
-# BERT-Semantic-Similarity-Flask-App
+# Diabetes Detection using Machine Learning Techniques
 
-BERT (Bidirectional Encoder Representations from Transformers) is a deep learning model that can be used to perform a variety of natural language processing tasks, including semantic similarity. Semantic similarity refers to the degree to which two sentences or phrases have similar meanings.
+This project focuses on developing a web application that utilizes various machine learning techniques to predict the presence or absence of diabetes in patients. The application is implemented using Flask, a popular web framework in Python.
 
-In the context of BERT, semantic similarity is typically measured using a technique called sentence-pair classification. This involves training BERT on a dataset of sentence pairs, where each pair consists of two sentences and a label indicating whether the sentences are semantically similar or not. Once trained, BERT can be used to predict the semantic similarity between any two sentences by classifying them as similar or not.
+Diabetes is a chronic disease that affects millions of people worldwide. Early detection of diabetes can significantly improve patient outcomes and help in managing the disease effectively. This project aims to provide a convenient and accessible tool for diabetes detection using machine learning algorithms.
 
-To use BERT for semantic similarity, the two sentences are passed through the model, which generates a fixed-length representation for each sentence. These representations are then compared using a similarity metric, such as cosine similarity, to determine the degree of semantic similarity between the two sentences.
+The web application allows users to input relevant medical information, such as glucose levels, blood pressure, insulin, and body mass index (BMI), and predicts the likelihood of having diabetes. By employing different machine learning techniques, we can compare their performance and accuracy in predicting diabetes.
 
-The BERT model can also be fine-tuned with specific datasets to improve its performance on certain tasks, such as question answering, sentiment analysis, and named entity recognition.
+# Technologies Used
 
-BERT has been shown to be highly effective in capturing the semantic similarity between sentence pairs and it's widely used in many NLP tasks, due to its ability to understand the meaning of the text and its context, which allows it to generate more accurate and meaningful semantic representations.
+* Python
+* Flask
+* Scikit-learn
+* Pandas
+* NumPy
+* HTML/CSS
+
+### Installation
+
+To set up the project locally, follow these steps:
+
+Clone the repository to your local machine.
+Ensure you have Python 3.x installed on your system.
+Install the required Python dependencies using the following command:
+```pip install -r requirements.txt```
+
+
+After completing the installation, navigate to the project directory.
+Launch the Flask application by running the following command:
+
+```python app.py```
+Open your web browser and go to http://localhost:5000 to access the application.
+Enter the necessary medical information into the form and submit it for diabetes prediction.
+The application will process the input using various machine learning models and display the prediction results.
+Machine Learning Techniques
+
+This project utilizes the following machine learning techniques for diabetes detection:
+
+Logistic Regression
+Decision Tree
+Support Vector Machines (SVM)
+Artificial Neural Networks (ANN)
+Naive Bayes
+Each technique employs different algorithms and approaches to predict diabetes. The web application compares the results from these techniques to evaluate their performance and provide accurate predictions.
+
+### Dataset
+
+The project employs a dataset containing medical information of patients, such as glucose levels, blood pressure, insulin, BMI, etc. The dataset is used to train and evaluate the machine learning models. The application utilizes the diabetes.csv file included in the project.
+
+### Model Training
+
+The machine learning models are trained using the diabetes.csv dataset. The dataset is preprocessed to handle missing values, normalize the features, and split into training and testing sets. The models are trained on the training set and evaluated on the testing set to measure their performance.
+
+### Web Application
+
+The web application is developed using Flask, a lightweight web framework in Python. Flask provides a simple and efficient way to create web applications. The application presents a user-friendly interface where users can input their medical information and obtain a diabetes prediction. The Flask server processes the input and utilizes the trained machine learning models to generate predictions, which are then displayed to the user.
